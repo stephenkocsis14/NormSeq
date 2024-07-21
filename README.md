@@ -1,6 +1,6 @@
 # NormSeq
 
-NormSeq is a tool for performing advanced mathematical analysis on RNA-seq data, written in C++ and callable from Python. It supports various normalization methods such as CPM, TPM, FPKM, RPKM, log2CPM, and Z-score normalization.
+NormSeq is a tool for performing normalization of RNA-seq read counts, written in C++ and callable from Python. It supports various normalization methods such as CPM, TPM, FPKM, RPKM, log2CPM, and Z-score normalization.
 
 ## Installation
 
