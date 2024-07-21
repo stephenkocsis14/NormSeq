@@ -1,12 +1,16 @@
 from setuptools import setup, Extension
-from pybind11.setup_helpers import build_ext
+from setuptools.command.build_ext import build_ext
+import pybind11
 
 ext_modules = [
     Extension(
         'norm_seq.normalization',
         ['norm_seq/normalization.cpp'],
-        include_dirs=['pybind11/include'],
-        language='c++'
+        include_dirs=[
+            pybind11.get_include(),
+        ],
+        language='c++',
+        extra_compile_args=['-std=c++11']
     ),
 ]
 
