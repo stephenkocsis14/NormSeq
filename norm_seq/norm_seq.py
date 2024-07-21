@@ -1,5 +1,5 @@
 import pandas as pd
-import normalization
+import norm_seq.normalization as normalization
 
 class NormSeq:
     def __init__(self, raw_counts: pd.DataFrame, lengths: pd.Series = None):
